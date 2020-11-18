@@ -1,0 +1,40 @@
+$basic-white: #ffffff;
+$basic-black: #000000;
+$extra-black: #444444;
+$basic-green: #63D1BB;
+$extra-green: #62D1BA;
+$basic-grey: #F1F1F1;
+$extra-grey: #ECECEC;
+
+.review__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $basic-black;
+}
+
+.review__text {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+  color: $extra-black;
+}
+
+.review__author-name {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $basic-black;
+  font-style: normal;
+}
+
+.review__author-id {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 400;
+  color: $extra-black;
+}
+
+.review__write-button {
+  width: 260px;
+}

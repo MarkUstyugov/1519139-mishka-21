@@ -1,0 +1,30 @@
+$basic-white: #ffffff;
+$basic-black: #000000;
+$extra-black: #444444;
+$basic-green: #63D1BB;
+$extra-green: #62D1BA;
+$basic-grey: #F1F1F1;
+$extra-grey: #ECECEC;
+
+.contacts__title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $basic-black;
+}
+
+.contacts__info {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  color: $extra-black;
+}
+
+.contacts__email-link {
+  color: $extra-black;
+  text-decoration: none;
+}
+
+.contacts__button {
+  width: 260px;
+}

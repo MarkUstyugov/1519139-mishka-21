@@ -3,6 +3,10 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <link href="css/style.css" rel="stylesheet">
   <title>HTML Academy: Мишка</title>
 </head>
 
@@ -29,10 +33,14 @@
             <a class="site-navigation__link" href="#">Распродажа</a>
           </li>
         </ul>
-        <ul class="main-navigation__user-navigation user-navigation">
-          <li class="user-navigation__item user-navigation__item--search">Поиск</li>
-          <li class="user-navigation__item user-navigation__item--cart">Корзина: пока пуста</li>
-        </ul>
+        <div class="main-navigation__search search">
+          <a class="search__link" href="#">Поиск по сайту
+            <!-- SVG icon -->
+          </a>
+        </div>
+        <div class="main-navigation__user-navigation user-navigation">
+          <a class="user-navigation__cart" href="#">Корзина: пока пуста</a>
+        </div>
       </nav>
       <span class="page-header__free-shipping">Бесплатная доставка по всей России</span>
     </div>
@@ -113,7 +121,7 @@
               aria-label="Предыдущий отзыв"></button>
             <button class="review__button review__button--next" type="button" aria-label="Следующий отзыв"></button>
           </div>
-          <a class="review__button button" href="#">Написать</a>
+          <a class="review__write-button button" href="#">Написать</a>
         </div>
       </div>
     </section>

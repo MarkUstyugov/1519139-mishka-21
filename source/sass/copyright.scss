@@ -1,0 +1,18 @@
+$basic-white: #ffffff;
+$basic-black: #000000;
+$extra-black: #444444;
+$basic-green: #63D1BB;
+$extra-green: #62D1BA;
+$basic-grey: #F1F1F1;
+$extra-grey: #ECECEC;
+
+.copyright__link {
+  text-decoration: none;
+}
+
+.copyright__text {
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $basic-black;
+}
