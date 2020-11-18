@@ -1,16 +1,19 @@
-$basic-white: #ffffff;
-$basic-black: #000000;
-$extra-black: #444444;
-$basic-green: #63D1BB;
-$extra-green: #62D1BA;
-$basic-grey: #F1F1F1;
-$extra-grey: #ECECEC;
+.review__wrapper {
+  padding: 0 30px;
+}
 
 .review__title {
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
   color: $basic-black;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.review__item {
+  margin: 0;
+  margin-bottom: 36px;
 }
 
 .review__text {
@@ -35,6 +38,15 @@ $extra-grey: #ECECEC;
   color: $extra-black;
 }
 
+.review__button-wrapper {
+  width: 100%;
+  height: 52px;
+  box-sizing: border-box;
+  border: 1px solid $extra-grey;
+  margin-bottom: 38px;
+}
+
 .review__write-button {
-  width: 260px;
+  width: 100%;
+
 }

@@ -1,21 +1,20 @@
-$basic-white: #ffffff;
-$basic-black: #000000;
-$extra-black: #444444;
-$basic-green: #63D1BB;
-$extra-green: #62D1BA;
-$basic-grey: #F1F1F1;
-$extra-grey: #ECECEC;
+.advantages__wrapper {
+  padding: 0 30px;
+}
 
 .advantages__title {
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
   color: $basic-black;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .advantages__list {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .advantages__item {
@@ -23,4 +22,72 @@ $extra-grey: #ECECEC;
   line-height: 20px;
   font-weight: 700;
   color: $basic-black;
+  padding-top: 84px;
+  position: relative;
+
+  &--flower::before {
+    content: "";
+    width: 33px;
+    height: 38px;
+    position: absolute;
+    background-image: url("../img/flower-icon.svg");
+    background-repeat: no-repeat;
+    top: 30px;
+    left: 8px;
+  }
+
+  &--style::before {
+    content: "";
+    width: 47px;
+    height: 27px;
+    position: absolute;
+    background-image: url("../img/style-icon.svg");
+    background-repeat: no-repeat;
+    top: 30px;
+    left: 0px;
+  }
+
+  &--heart::before {
+    content: "";
+    width: 34px;
+    height: 27px;
+    position: absolute;
+    background-image: url("../img/heart-icon.svg");
+    background-repeat: no-repeat;
+    top: 30px;
+    left: 8px;
+  }
+
+  &--wool::before {
+    content: "";
+    width: 35px;
+    height: 34px;
+    position: absolute;
+    background-image: url("../img/wool-icon.svg");
+    background-repeat: no-repeat;
+    top: 30px;
+    left: 8px;
+  }
+
+  &--rocket::before {
+    content: "";
+    width: 55px;
+    height: 23px;
+    position: absolute;
+    background-image: url("../img/rocket-icon.svg");
+    background-repeat: no-repeat;
+    top: 30px;
+    left: 8px;
+  }
+
+  &--present::before {
+    content: "";
+    width: 33px;
+    height: 32px;
+    position: absolute;
+    background-image: url("../img/present-icon.svg");
+    background-repeat: no-repeat;
+    top: 30px;
+    left: 8px;
+  }
 }

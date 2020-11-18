@@ -1,16 +1,13 @@
-$basic-white: #ffffff;
-$basic-black: #000000;
-$extra-black: #444444;
-$basic-green: #63D1BB;
-$extra-green: #62D1BA;
-$basic-grey: #F1F1F1;
-$extra-grey: #ECECEC;
+.special-product__wrapper {
+  padding: 0 30px;
+}
 
 .special-product__title {
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
   color: $basic-black;
+  margin: 0;
 }
 
 .special-product__week {
@@ -33,8 +30,9 @@ $extra-grey: #ECECEC;
   line-height: 24px;
   font-weight: 700;
   color: $extra-black;
+  text-align: center;
 }
 
 .special-product__button {
-  width: 260px;
+  width: 100%;
 }

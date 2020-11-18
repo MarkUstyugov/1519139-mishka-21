@@ -1,41 +1,11 @@
-$basic-white: #ffffff;
-$basic-black: #000000;
-$extra-black: #444444;
-$basic-green: #63D1BB;
-$extra-green: #62D1BA;
-$basic-grey: #F1F1F1;
-$extra-grey: #ECECEC;
-
-$basic-font: "Open Sans", "Arial", sans-serif;
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-body {
-  font-size: 15px;
-  line-height: 24px;
-  font-weight: 400;
-  background-color: $basic-white;
-  font-family: $basic-font;
-  width: 320px;
-}
-
+@import "variables.scss";
+@import "basic-style";
+@import "page-header.scss";
+@import "main-navigation.scss";
+@import "site-navigation.scss";
+@import "search.scss";
+@import "user-navigation.scss";
+@import "page-main.scss";
 @import "offer.scss";
 @import "special-product.scss";
 @import "specification-info.scss";

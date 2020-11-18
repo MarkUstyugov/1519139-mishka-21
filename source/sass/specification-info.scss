@@ -4,3 +4,20 @@
   font-weight: 400;
   color: $extra-black;
 }
+
+.specification-info__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid $extra-grey;
+}
+
+.specification-info__title {
+  width: 98px;
+}
+
+.specification-info__text {
+  margin: 0;
+}

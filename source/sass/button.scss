@@ -1,14 +1,7 @@
-$basic-white: #ffffff;
-$basic-black: #000000;
-$extra-black: #444444;
-$basic-green: #63D1BB;
-$extra-green: #62D1BA;
-$basic-grey: #F1F1F1;
-$extra-grey: #ECECEC;
-
 .button {
   display: inline-block;
   text-align: center;
+  box-sizing: border-box;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -17,4 +10,14 @@ $extra-grey: #ECECEC;
   padding-bottom: 16px;
   border: 2px solid $extra-black;
   text-decoration: none;
+
+  &:hover {
+    color: $basic-white;
+    background-color: $extra-black;
+  }
+
+  &:active {
+    color: rgba($basic-white, 0.3);
+    background-color: $extra-black;
+  }
 }

@@ -1,13 +1,18 @@
-$basic-white: #ffffff;
-$basic-black: #000000;
-$extra-black: #444444;
-$basic-green: #63D1BB;
-$extra-green: #62D1BA;
-$basic-grey: #F1F1F1;
-$extra-grey: #ECECEC;
+.copyright {
+  border-top: 1px solid $special-grey;
+}
 
 .copyright__link {
   text-decoration: none;
+  display: block;
+  text-align: center;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+
+.copyright__link svg {
+  vertical-align: middle;
+  margin-left: 15px;
 }
 
 .copyright__text {
