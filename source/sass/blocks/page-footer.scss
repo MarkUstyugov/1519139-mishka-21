@@ -1,0 +1,14 @@
+.page-footer {
+  background-color: $basic-grey;
+  width: 320px;
+  min-height: 160px;
+  outline: 2px solid $testing;
+}
+
+.page-footer__wrapper {
+  padding: 0 30px;
+}
+
+.page-footer__logo {
+  display: none;
+}

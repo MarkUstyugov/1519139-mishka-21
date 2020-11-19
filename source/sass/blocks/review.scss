@@ -1,0 +1,55 @@
+.review {
+  outline: 2px solid $testing;
+}
+
+.review__wrapper {
+  padding: 0 30px;
+}
+
+.review__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $basic-black;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.review__item {
+  margin: 0;
+  margin-bottom: 36px;
+}
+
+.review__text {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+  color: $extra-black;
+}
+
+.review__author-name {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $basic-black;
+  font-style: normal;
+}
+
+.review__author-id {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 400;
+  color: $extra-black;
+}
+
+.review__button-wrapper {
+  width: 100%;
+  height: 52px;
+  box-sizing: border-box;
+  border: 1px solid $extra-grey;
+  margin-bottom: 38px;
+}
+
+.review__write-button {
+  width: 100%;
+}

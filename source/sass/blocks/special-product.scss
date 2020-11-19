@@ -1,0 +1,42 @@
+.special-product {
+  outline: 2px solid $testing;
+}
+
+.special-product__wrapper {
+  padding: 0 30px;
+}
+
+.special-product__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $basic-black;
+  margin: 0;
+}
+
+.special-product__week {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $basic-green;
+}
+
+.special-product__text {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $extra-black;
+}
+
+.special-product__price {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $extra-black;
+  text-align: center;
+}
+
+.special-product__button {
+  width: 100%;
+}

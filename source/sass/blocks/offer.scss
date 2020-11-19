@@ -1,0 +1,51 @@
+.offer {
+  background-image: url("../img/offer-bg-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  min-height: 488px;
+  display: flex;
+  flex-direction: column;
+  outline: 2px solid $testing;
+}
+
+.offer__title {
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $basic-black;
+  margin: 0;
+  text-align: center;
+  margin-top: 90px;
+  margin-bottom: 120px;
+  padding: 0 30px;
+}
+
+.offer__list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.offer__item {
+  flex-grow: 1;
+}
+
+.offer__button {
+  display: block;
+  padding: 30px;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $basic-white;
+  text-decoration: none;
+
+  &--interior {
+    background-color: $basic-green;
+  }
+
+  &--toys {
+    background-color: $specal-green;
+  }
+}
