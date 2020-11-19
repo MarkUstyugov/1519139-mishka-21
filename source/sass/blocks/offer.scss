@@ -1,5 +1,5 @@
 .offer {
-  background-image: url(../img/offer-bg-mobile.jpg);
+  background-image: url("../img/offer-bg-mobile.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   min-height: 488px;
@@ -40,11 +40,11 @@
   color: $basic-white;
   text-decoration: none;
 
-  &--interior{
+  &--interior {
     background-color: $basic-green;
   }
 
-  &--toys{
+  &--toys {
     background-color: $specal-green;
   }
 }
