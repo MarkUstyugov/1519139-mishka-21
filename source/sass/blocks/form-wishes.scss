@@ -1,0 +1,18 @@
+.form-wishes {
+  margin: 0;
+}
+
+.form-wishes__textarea {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $extra-black;
+  width: 100%;
+  box-sizing: border-box;
+  resize: none;
+
+  &::placeholder {
+    color: rgba($basic-black, 0.3);
+  }
+}
