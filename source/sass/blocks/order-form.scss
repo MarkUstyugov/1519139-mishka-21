@@ -1,0 +1,32 @@
+.order-form__title {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  color: $basic-green;
+  margin-bottom: 10px;
+}
+
+.order-form__block {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.order-form__text-required {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.order-form__button {
+  font-family: inherit;
+  background-color: $basic-white;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  width: 100%;
+}

@@ -1,0 +1,42 @@
+.catalog {
+  padding: 0 30px;
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog__item {
+  min-height: 374px;
+  margin-bottom: 30px;
+  border: 1px solid $extra-grey;
+  box-sizing: border-box;
+}
+
+.catalog__link {
+  color: $basic-black;
+  text-decoration: none;
+}
+
+.catalog__title {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $basic-black;
+}
+
+.catalog__specification {
+  font-size: 13px;
+  line-height: 30px;
+  font-weight: 400;
+  color: $extra-black;
+}
+
+.catalog__price {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $basic-black;
+}
