@@ -1,0 +1,48 @@
+.production__title {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $basic-black;
+  margin: 0;
+  padding: 22px 13px 27px 91px;
+  border-top: 1px solid $extra-grey;
+  border-left: 1px solid $extra-grey;
+  border-right: 1px solid $extra-grey;
+  box-sizing: border-box;
+}
+
+.production__text {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $extra-black;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.production__text-wrapper {
+  padding: 35px 32px 32px 33px;
+  border-bottom: 1px solid $extra-grey;
+  border-left: 1px solid $extra-grey;
+  border-right: 1px solid $extra-grey;
+}
+
+.production__button {
+  padding: 12px 0;
+  width: 100%;
+}
+
+.production__video-wrapper {
+  position: relative;
+  height: 150px;
+}
+
+.production__play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  transform: translate(-50%, 0);
+  z-index: 1;
+}

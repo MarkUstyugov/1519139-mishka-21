@@ -1,14 +1,15 @@
-.form-header {
-  background-color: $basic-grey;
+.catalog-main__header {
   min-height: 177px;
+  background-color: $basic-grey;
   text-align: center;
-  padding: 74px 30px 20px 30px;
+  padding: 74px 41px 20px 41px;
   box-sizing: border-box;
 }
 
-.form-header__title {
+.catalog-main__title {
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
+  color: $basic-black;
   margin: 0;
 }
