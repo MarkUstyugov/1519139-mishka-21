@@ -23,3 +23,10 @@
     color: rgba($basic-black, 0.3);
   }
 }
+
+@media (min-width: $tablet) {
+  .search {
+    width: 85px;
+    border: none;
+  }
+}

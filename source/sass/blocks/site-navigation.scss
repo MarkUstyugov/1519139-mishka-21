@@ -31,3 +31,17 @@
     color: rgba($basic-black, 0.3);
   }
 }
+
+@media (min-width: $tablet) {
+  .site-navigation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .site-navigation__item {
+    height: 79px;
+    border-top: none;
+    margin-right: 10px;
+  }
+}

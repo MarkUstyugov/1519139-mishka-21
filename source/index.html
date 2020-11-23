@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
   <title>HTML Academy: Мишка</title>
 </head>
@@ -15,7 +16,7 @@
           <img class="page-header__logo-image" src="img/mishka-logo-mobile.svg" alt="Логотип" width="86" height="35">
         </a>
       </div>
-      <nav class="main-navigation">
+      <nav class="page-header__main-navigation main-navigation">
         <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-navigation__site-navigation site-navigation">
           <li class="site-navigation__item">
@@ -24,21 +25,25 @@
           <li class="site-navigation__item">
             <a class="site-navigation__link" href="form.html">Вязание на заказ</a>
           </li>
-          <li class="site-navigation__item">
-            <a class="site-navigation__link" href="#">Новое поступление</a>
+        </ul>
+      </nav>
+      <div class="page-header__search search">
+        <a class="search__link" href="#">Поиск по сайту
+          <!-- SVG icon -->
+        </a>
+      </div>
+      <div class="page-header__user-navigation user-navigation">
+        <a class="user-navigation__cart" href="#">Корзина: пока пуста</a>
+      </div>
+      <nav class="page-header__additional-navigation additional-navigation">
+        <ul class="additional-navigation__list">
+          <li class="additional-navigation__item">
+            <a class="additional-navigation__link" href="#">Новое поступление</a>
           </li>
-          <li class="site-navigation__item">
-            <a class="site-navigation__link" href="#">Распродажа</a>
+          <li class="additional-navigation__item">
+            <a class="additional-navigation__link" href="#">Распродажа</a>
           </li>
         </ul>
-        <div class="main-navigation__search search">
-          <a class="search__link" href="#">Поиск по сайту
-            <!-- SVG icon -->
-          </a>
-        </div>
-        <div class="main-navigation__user-navigation user-navigation">
-          <a class="user-navigation__cart" href="#">Корзина: пока пуста</a>
-        </div>
       </nav>
       <span class="page-header__free-shipping">Бесплатная доставка по всей России</span>
     </div>
@@ -47,40 +52,48 @@
   <main class="page-main">
     <h1 class="visually-hidden">Интернет магазин товаров ручной работы для дома - "Мишка"</h1>
     <section class="page-main__offer offer">
-      <h2 class="offer__title">Милые штуки ручной<br> работы для дома</h2>
-      <ul class="offer__list">
-        <li class="offer__item">
-          <a class="offer__button offer__button--interior" href="#">Предметы<br> интерьера</a>
-        </li>
-        <li class="offer__item">
-          <a class="offer__button offer__button--toys" href="#">Детские<br> игрушки</a>
-        </li>
-      </ul>
+      <div class="offer__wrapper">
+        <h2 class="offer__title">Милые штуки ручной<br> работы для дома</h2>
+        <ul class="offer__list">
+          <li class="offer__item">
+            <a class="offer__button offer__button--interior" href="#">Предметы<br> интерьера</a>
+          </li>
+          <li class="offer__item">
+            <a class="offer__button offer__button--toys" href="#">Детские<br> игрушки</a>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="page-main__special-product special-product">
       <div class="special-product__wrapper">
-        <h2 class="special-product__title">Вязаные корзинки</h2>
-        <p class="special-product__week">Товар недели</p>
-        <p class="special-product__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
-          размерах.</p>
-        <dl class="special-product__specification-info specification-info">
-          <div class="specification-info__row">
-            <dt class="specification-info__title">Цвет:</dt>
-            <dd class="specification-info__text">«Тиффани»/серый</dd>
+        <div class="special-product__title-wrapper">
+          <h2 class="special-product__title">Вязаные корзинки</h2>
+          <p class="special-product__week">Товар недели</p>
+        </div>
+        <div class="special-product__content-wrapper">
+          <p class="special-product__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
+            размерах.</p>
+          <dl class="special-product__specification-info specification-info">
+            <div class="specification-info__row">
+              <dt class="specification-info__title">Цвет:</dt>
+              <dd class="specification-info__text">«Тиффани»/серый</dd>
+            </div>
+            <div class="specification-info__row">
+              <dt class="specification-info__title">Диаметр:</dt>
+              <dd class="specification-info__text">25 см</dd>
+            </div>
+            <div class="specification-info__row">
+              <dt class="specification-info__title">Высота:</dt>
+              <dd class="specification-info__text">15 см</dd>
+            </div>
+          </dl>
+          <img class="special-product__image" src="https://via.placeholder.com/260x315" alt="Изображение товара"
+            width="260" height="315">
+          <div class="special-product__price-wrapper">
+            <p class="special-product__price">Цена: 990 руб.</p>
+            <a class="special-product__button button" href="#">Заказать</a>
           </div>
-          <div class="specification-info__row">
-            <dt class="specification-info__title">Диаметр:</dt>
-            <dd class="specification-info__text">25 см</dd>
-          </div>
-          <div class="specification-info__row">
-            <dt class="specification-info__title">Высота:</dt>
-            <dd class="specification-info__text">15 см</dd>
-          </div>
-        </dl>
-        <img class="special-product__image" src="https://via.placeholder.com/260x315" alt="Изображение товара"
-          width="260" height="315">
-        <p class="special-product__price">Цена: 990 руб.</p>
-        <a class="special-product__button button" href="#">Заказать</a>
+        </div>
       </div>
     </section>
     <section class="page-main__advantages advantages">
@@ -117,40 +130,46 @@
               лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
               фотографии сразу стали более стильными, а также набирают больше лайков!
             </p>
-            <cite class="review__author-name">Анастасия Красильникова</cite>
-            <span class="review__author-id">@misssssiskras</span>
+            <div class="review__author-wrapper">
+              <cite class="review__author-name">Анастасия Красильникова</cite>
+              <span class="review__author-id">@misssssiskras</span>
+            </div>
+            <div class="review__button-wrapper">
+              <button class="review__button review__button--previous" type="button"
+                aria-label="Предыдущий отзыв"></button>
+              <button class="review__button review__button--next" type="button" aria-label="Следующий отзыв"></button>
+            </div>
           </blockquote>
-          <div class="review__button-wrapper">
-            <button class="review__button review__button--previous" type="button"
-              aria-label="Предыдущий отзыв"></button>
-            <button class="review__button review__button--next" type="button" aria-label="Следующий отзыв"></button>
-          </div>
+        </div>
+        <div class="review__write-button-wrapper">
           <a class="review__write-button button" href="#">Написать</a>
         </div>
       </div>
     </section>
     <section class="page-main__contacts contacts">
-      <div class="contacts__wrapper">
-        <h2 class="contacts__title">Контакты</h2>
-        <div class="contacts__info">
-          <div class="contacts__email">
-            <p class="contacts__email-title">E-mail</p>
-            <p class="contacts__email-text">
-              <a class="contacts__email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-            </p>
-          </div>
-          <div class="contacts__address">
-            <p class="contacts__address-title">Адрес:</p>
-            <p class="contacts__address-text">г. Санкт-Петербург<br> ул. Большая Конюшенная д. 19/8, офис 101</p>
+      <div class="contacts__main-wrapper">
+        <div class="contacts__wrapper">
+          <h2 class="contacts__title">Контакты</h2>
+          <div class="contacts__info">
+            <div class="contacts__email">
+              <p class="contacts__email-title">E-mail</p>
+              <p class="contacts__email-text">
+                <a class="contacts__email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+              </p>
+            </div>
+            <div class="contacts__address">
+              <p class="contacts__address-title">Адрес:</p>
+              <p class="contacts__address-text">г. Санкт-Петербург<br> ул. Большая Конюшенная д. 19/8, офис 101</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="contacts__map-wrapper">
-        <img class="contacts__map-image" src="https://via.placeholder.com/320x454"
-          alt="Наш адрес: г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101" width="320" height="454">
-      </div>
-      <div class="contacts__button-wrapper">
-        <a class="contacts__button button" href="#">Напишите нам</a>
+        <div class="contacts__map-wrapper">
+          <img class="contacts__map-image" src="https://via.placeholder.com/320x454"
+            alt="Наш адрес: г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101" width="320" height="454">
+        </div>
+        <div class="contacts__button-wrapper">
+          <a class="contacts__button button" href="#">Напишите нам</a>
+        </div>
       </div>
     </section>
   </main>
