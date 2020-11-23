@@ -21,3 +21,13 @@
   font-weight: 700;
   color: $basic-black;
 }
+
+@media (min-width: $tablet) {
+  .copyright {
+    border-top: none;
+  }
+
+  .copyright__link {
+    padding-top: 0;
+  }
+}

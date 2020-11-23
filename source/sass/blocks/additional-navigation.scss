@@ -1,10 +1,16 @@
-.user-navigation {
-  height: 79px;
-  border-top: 1px solid $special-grey;
-  border-bottom: 1px solid $special-grey;
+.additional-navigation__list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.user-navigation__cart {
+.additional-navigation__item {
+  margin-right: 20px;
+}
+
+.additional-navigation__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,11 +28,5 @@
 
   &:active {
     color: rgba($basic-black, 0.3);
-  }
-}
-
-@media (min-width: $tablet) {
-  .user-navigation {
-    border: none;
   }
 }

@@ -7,3 +7,23 @@
   top: -40px;
   right: 0;
 }
+
+@media (min-width: $tablet) {
+  .main-navigation {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-navigation__toggle {
+    display: none;
+  }
+
+  .user-navigation {
+    order: 2;
+    width: 264px;
+  }
+
+  .main-navigation__site-navigation {
+    order: 3;
+  }
+}

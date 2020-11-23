@@ -1,13 +1,28 @@
 .page-footer {
   background-color: $basic-grey;
-  width: 320px;
-  min-height: 160px;
 }
 
 .page-footer__wrapper {
-  padding: 0 30px;
+  min-width: 320px;
+  max-width: 1150px;
+  min-height: 160px;
+  margin: 0 auto;
 }
 
 .page-footer__logo {
   display: none;
+}
+
+@media (min-width: $tablet) {
+  .page-footer__wrapper {
+    padding: 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .page-footer__logo {
+    display: block;
+  }
 }
