@@ -1,0 +1,50 @@
+.color__title {
+  padding: 0;
+}
+
+.color__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.color__label {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $basic-black;
+}
+
+@media (min-width: $tablet) {
+  .color__title {
+    width: 167px;
+    margin: 0;
+    float: left;
+  }
+
+  .color__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 501px;
+  }
+
+  .color__item {
+    width: 210px;
+  }
+
+  .color__label {
+    font-size: 19px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .color__title {
+    width: 114px;
+  }
+
+  .color__list {
+    width: 814px;
+  }
+}

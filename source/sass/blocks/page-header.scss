@@ -1,3 +1,9 @@
+.page-header__wrapper {
+  margin: 0 auto;
+  max-width: 320px;
+  box-sizing: border-box;
+}
+
 .page-header__logo-wrapper {
   min-height: 79px;
   display: flex;
@@ -18,7 +24,6 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0 50px;
-    box-sizing: border-box;
     margin: 0 auto;
     max-width: 767px;
   }

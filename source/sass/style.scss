@@ -1,6 +1,7 @@
 @import "fonts.scss";
 @import "variables.scss";
 @import "blocks/button.scss";
+@import "blocks/page.scss";
 @import "basic-style.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-navigation.scss";
@@ -21,12 +22,12 @@
 @import "blocks/form-header.scss";
 @import "blocks/order.scss";
 @import "blocks/order-form.scss";
-@import "blocks/type-list.scss";
-@import "blocks/color-list.scss";
-@import "blocks/name-list.scss";
-@import "blocks/form-phone.scss";
-@import "blocks/form-email.scss";
-@import "blocks/form-wishes.scss";
+@import "blocks/type.scss";
+@import "blocks/color.scss";
+@import "blocks/name.scss";
+@import "blocks/phone.scss";
+@import "blocks/email.scss";
+@import "blocks/wishes.scss";
 @import "blocks/catalog.scss";
 @import "blocks/catalog-main.scss";
 @import "blocks/production.scss";

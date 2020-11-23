@@ -1,9 +1,8 @@
 .contacts__main-wrapper {
   padding: 0 30px;
-  min-width: 320px;
-  max-width: 1150px;
   margin: 0 auto;
   box-sizing: border-box;
+  max-width: 320px;
 }
 
 .contacts__title {
@@ -76,6 +75,7 @@
 @media (min-width: $tablet) {
   .contacts__main-wrapper {
     padding: 0 50px;
+    max-width: 768px;
   }
 
   .contacts__info {
@@ -111,6 +111,7 @@
     height: 457px;
     padding: 0 50px 0 225px;
     justify-content: flex-start;
+    max-width: 1150px;
   }
 
   .contacts__info {
