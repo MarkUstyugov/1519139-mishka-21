@@ -1,0 +1,47 @@
+.email__wrapper {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.email__title {
+  padding: 0;
+}
+
+.email__input {
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $extra-black;
+  width: 100%;
+  box-sizing: border-box;
+
+  &::placeholder {
+    color: rgba($basic-black, 0.3);
+  }
+}
+
+@media (min-width: $tablet) {
+  .email__title {
+    width: 167px;
+    float: left;
+  }
+
+  .email__input {
+    width: 501px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .email__title {
+    width: 114px;
+  }
+
+  .email__list {
+    width: 814px;
+  }
+
+  .email__input {
+    width: 700px;
+  }
+}

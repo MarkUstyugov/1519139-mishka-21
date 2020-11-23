@@ -11,9 +11,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 1150px;
-  min-width: 320px;
   margin: 0 auto;
+  box-sizing: border-box;
+  max-width: 320px;
 }
 
 .offer__title {
@@ -62,6 +62,7 @@
     min-height: 746px;
     background-image: url("../img/offer-bg.jpg");
     background-position: top;
+    max-width: 768px;
   }
 
   .offer__list {
@@ -89,14 +90,23 @@
     font-size: 20px;
     line-height: 30px;
     padding: 30px;
+    width: 334px;
   }
 }
 
 @media (min-width: $desktop) {
+  .offer__wrapper {
+    max-width: 1150px;
+  }
+
   .offer__title {
     font-size: 51px;
     line-height: 55px;
     margin-top: 158px;
     padding: 0 30px;
+  }
+
+  .offer__button {
+    width: 525px;
   }
 }
