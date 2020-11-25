@@ -40,8 +40,34 @@
   }
 
   .site-navigation__item {
-    height: 79px;
+    height: auto;
+    margin-top: 20px;
     border-top: none;
     margin-right: 10px;
+  }
+
+  .site-navigation__link {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .site-navigation__link {
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .site-navigation__item {
+    padding-right: 34px;
+    margin: 0;
+
+    &:first-child {
+      border-right: 1px solid $special-grey;
+    }
+
+    &:nth-child(2) {
+      padding-left: 36px;
+    }
   }
 }

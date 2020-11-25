@@ -12,9 +12,14 @@
   .main-navigation {
     display: flex;
     flex-wrap: wrap;
+    position: absolute;
   }
 
   .main-navigation__toggle {
+    display: none;
+  }
+
+  /* .main-navigation__toggle {
     display: none;
   }
 
@@ -25,5 +30,5 @@
 
   .main-navigation__site-navigation {
     order: 3;
-  }
+  } */
 }
