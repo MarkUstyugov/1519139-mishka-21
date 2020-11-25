@@ -16,7 +16,7 @@
           <img class="page-header__logo-image" src="img/mishka-logo-mobile.svg" alt="Логотип" width="86" height="35">
         </a>
       </div>
-      <nav class="main-navigation">
+      <nav class="page-header__main-navigation main-navigation">
         <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-navigation__site-navigation site-navigation">
           <li class="site-navigation__item">
@@ -25,23 +25,32 @@
           <li class="site-navigation__item">
             <a class="site-navigation__link" href="form.html">Вязание на заказ</a>
           </li>
-          <li class="site-navigation__item">
-            <a class="site-navigation__link" href="#">Новое поступление</a>
+        </ul>
+      </nav>
+      <div class="page-header__search search">
+        <a class="search__link" href="#">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path opacity="0.2"
+              d="M17.6932 16.0568L14.2159 12.5795C15.2386 11.25 15.75 9.61364 15.75 7.875C15.75 3.47727 12.2727 0 7.875 0C3.47727 0 0 3.47727 0 7.875C0 12.2727 3.47727 15.75 7.875 15.75C9.61364 15.75 11.25 15.1364 12.5795 14.2159L16.0568 17.6932C16.2614 17.8977 16.4659 18 16.875 18C17.4886 18 18 17.4886 18 16.875C18 16.6705 17.8977 16.3636 17.6932 16.0568ZM2.25 7.875C2.25 4.80682 4.80682 2.25 7.875 2.25C10.9432 2.25 13.5 4.80682 13.5 7.875C13.5 10.9432 10.9432 13.5 7.875 13.5C4.80682 13.5 2.25 10.9432 2.25 7.875Z"
+              fill="black" />
+          </svg>
+          <span class="search__link-text">Поиск по сайту</span>
+        </a>
+      </div>
+      <div class="page-header__user-navigation user-navigation">
+        <a class="user-navigation__cart" href="#">Корзина: пока пуста</a>
+      </div>
+      <nav class="page-header__additional-navigation additional-navigation">
+        <ul class="additional-navigation__list">
+          <li class="additional-navigation__item">
+            <a class="additional-navigation__link" href="#">Новое поступление</a>
           </li>
-          <li class="site-navigation__item">
-            <a class="site-navigation__link" href="#">Распродажа</a>
+          <li class="additional-navigation__item">
+            <a class="additional-navigation__link" href="#">Распродажа</a>
           </li>
         </ul>
-        <div class="main-navigation__search search">
-          <a class="search__link" href="#">Поиск по сайту
-            <!-- SVG icon -->
-          </a>
-        </div>
-        <div class="main-navigation__user-navigation user-navigation">
-          <a class="user-navigation__cart" href="#">Корзина: пока пуста</a>
-        </div>
       </nav>
-      <span class="page-header__free-shipping">Бесплатная доставка по всей России</span>
+      <span class="page-header__free-shipping">Бесплатная доставка по России</span>
     </div>
   </header>
 
@@ -49,23 +58,21 @@
     <div class="catalog-main__header">
       <h1 class="catalog-main__title">Каталог товаров</h1>
     </div>
-    <div class="catalog">
+    <div class="catalog-main__catalog-wrapper catalog">
       <ul class="catalog__list">
         <li class="catalog__item">
           <a class="catalog__image-link" href="#">
             <img class="catalog__image" src="https://via.placeholder.com/260x195" alt="" width="260" height="195">
           </a>
           <div class="catalog__item-wrapper">
-            <a class="catalog__link" href="#">
-              <h2 class="catalog__title">Зайчик-попрыгайчик</h2>
-            </a>
-            <p class="catalog__specification">Рост 30 см, вес 200 г</p>
-            <div class="catalog__price-wrapper">
-              <p class="catalog__price">1 200 руб.</p>
-              <a class="catalog__add-cart" href="#">
-                <!-- SVG icon -->
-              </a>
-            </div>
+            <h2 class="catalog__title"><a class="catalog__link" href="#">Зайчик-попрыгайчик</a></h2>
+              <p class="catalog__specification">Рост 30 см, вес 200 г</p>
+              <div class="catalog__price-wrapper">
+                <p class="catalog__price">1 200 руб.</p>
+                <a class="catalog__add-cart" href="#">
+                  <!-- SVG icon -->
+                </a>
+              </div>
           </div>
         </li>
         <li class="catalog__item">
@@ -73,9 +80,8 @@
             <img class="catalog__image" src="https://via.placeholder.com/260x195" alt="" width="260" height="195">
           </a>
           <div class="catalog__item-wrapper">
-            <a class="catalog__link" href="#">
-              <h2 class="catalog__title">Корзинка для белья</h2>
-            </a>
+            <h2 class="catalog__title"><a class="catalog__link" href="#">Корзинка для белья</a></h2>
+
             <p class="catalog__specification">Диаметр 15 см, высота 10 см</p>
             <div class="catalog__price-wrapper">
               <p class="catalog__price">690 руб.</p>
@@ -90,9 +96,7 @@
             <img class="catalog__image" src="https://via.placeholder.com/260x195" alt="" width="260" height="195">
           </a>
           <div class="catalog__item-wrapper">
-            <a class="catalog__link" href="#">
-              <h2 class="catalog__title">Большая корзинка для игрушек</h2>
-            </a>
+            <h2 class="catalog__title"><a class="catalog__link" href="#">Большая корзинка для игрушек</a></h2>
             <p class="catalog__specification">Диаметр 30 см, высота 30 см</p>
             <div class="catalog__price-wrapper">
               <p class="catalog__price">1 500 руб.</p>
@@ -108,8 +112,6 @@
         <div class="production__video-wrapper">
           <button class="production__play-button" type="button"><span class="visually-hidden">Включить
               видео</span></button>
-          <video class="production__video" src="" poster="https://via.placeholder.com/260x150" width="260"
-            height="150"></video>
         </div>
         <div class="production__text-wrapper">
           <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как

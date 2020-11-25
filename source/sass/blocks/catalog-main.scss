@@ -1,9 +1,18 @@
+.catalog-main__catalog-wrapper {
+  padding: 0 30px;
+  margin: 0 auto;
+  margin-top: 20px;
+  box-sizing: border-box;
+  max-width: 320px;
+}
+
 .catalog-main__header {
   min-height: 177px;
   background-color: $basic-grey;
   text-align: center;
   padding: 74px 41px 20px 41px;
   box-sizing: border-box;
+  background-clip: border-box;
 }
 
 .catalog-main__title {
@@ -12,4 +21,17 @@
   font-weight: 700;
   color: $basic-black;
   margin: 0;
+}
+
+@media (min-width: $tablet) {
+  .catalog-main__catalog-wrapper {
+    max-width: 768px;
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .catalog-main__catalog-wrapper {
+    max-width: 1150px;
+  }
 }
