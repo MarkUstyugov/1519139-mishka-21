@@ -2,12 +2,6 @@
   position: relative;
 }
 
-.main-navigation__toggle {
-  position: absolute;
-  top: -40px;
-  right: 0;
-}
-
 @media (min-width: $tablet) {
   .main-navigation {
     display: flex;

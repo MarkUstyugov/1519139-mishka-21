@@ -3,17 +3,40 @@
 }
 
 .page-main__special-product {
-  margin-bottom: 31px;
+  /* margin-bottom: 31px; */
 }
 
 .page-main__advantages {
-  margin-bottom: 56px;
+  margin-bottom: 60px;
 }
 
 .page-main__review {
-  margin-bottom: 38px;
+  margin-bottom: 40px;
 }
 
 .page-main__contacts {
-  margin-bottom: 39px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: $tablet) {
+  .page-main__offer {
+    margin-bottom: 0;
+  }
+
+  .page-main__special-product {
+    margin-bottom: 0;
+  }
+
+  .page-main__advantages {
+    margin-bottom: 0;
+  }
+
+  .page-main__review {
+    /* margin-bottom: 95px; */
+    margin: 0;
+  }
+
+  .page-main__contacts {
+    margin-bottom: 60px;
+  }
 }

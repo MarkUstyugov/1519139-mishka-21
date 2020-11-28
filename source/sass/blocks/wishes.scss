@@ -15,6 +15,10 @@
   width: 100%;
   box-sizing: border-box;
   resize: none;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border: 2px solid $extra-black;
 
   &::placeholder {
     color: rgba($basic-black, 0.3);

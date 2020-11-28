@@ -3,7 +3,6 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 0;
   padding: 0;
   list-style: none;
   padding-top: 25px;
@@ -17,4 +16,18 @@
 
 .social__item:last-child {
   margin-right: 0;
+}
+
+.social__link:hover path {
+  fill: $another-green;
+}
+
+.social__link:active path {
+  fill: rgba($another-green, 0.3);
+}
+
+@media (min-width: $tablet) {
+  .social {
+    padding-top: 0;
+  }
 }

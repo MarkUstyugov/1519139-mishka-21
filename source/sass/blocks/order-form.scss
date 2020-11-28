@@ -4,12 +4,25 @@
   font-weight: 700;
   color: $basic-green;
   margin-bottom: 10px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+
+  &::after {
+    content: "";
+    height: 1px;
+    background-color: $extra-green;
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin-left: 29px;
+  }
 }
 
 .order-form__block {
   border: none;
   margin: 0;
   padding: 0;
+  margin-bottom: 20px;
 }
 
 .order-form__text-required {
@@ -19,7 +32,6 @@
   margin: 0;
   margin-top: 10px;
   margin-bottom: 20px;
-  text-align: center;
 }
 
 .order-form__button {
@@ -32,6 +44,31 @@
 }
 
 @media (min-width: $tablet) {
+  .order-form__color,
+  .order-form__phone,
+  .order-form__email {
+    background-color: $basic-grey;
+  }
+
+  .order-form__phone {
+    margin-bottom: 0;
+    padding-top: 40px;
+  }
+
+  .order-form__email {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+  }
+
+  .order-form__wrapper,
+  .order__text-wrapper,
+  .order-form__bottom-wrapper {
+    max-width: 768px;
+    padding: 0 50px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
   .order-form__bottom-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -45,9 +82,26 @@
   .order-form__button {
     width: 230px;
   }
+
+  .order-form__color {
+    background-color: $basic-grey;
+  }
+
+  .order-form__title {
+    margin-top: 10px;
+  }
 }
 
 @media (min-width: $desktop) {
+  .order-form__wrapper,
+  .order__text-wrapper,
+  .order-form__bottom-wrapper {
+    max-width: 1150px;
+    padding: 0 50px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
   .order-form__bottom-wrapper {
     padding: 0 114px;
   }
