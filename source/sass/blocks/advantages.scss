@@ -1,3 +1,8 @@
+.advantages {
+  background-image: url("../img/zigzag-mobile.svg");
+  background-repeat: repeat-x;
+}
+
 .advantages__wrapper {
   padding: 0 30px;
   margin: 0 auto;
@@ -11,8 +16,8 @@
   font-weight: 700;
   color: $basic-black;
   margin: 0;
-  padding-top: 40px;
-  margin-bottom: 5px;
+  padding-top: 38px;
+  margin-bottom: 2px;
 }
 
 .advantages__list {
@@ -99,7 +104,7 @@
 @media (min-width: $tablet) {
   .advantages {
     padding-top: 36px;
-    padding-bottom: 80px;
+    padding-bottom: 82px;
     background-image: url("../img/zigzag-tablet.svg");
     background-repeat: repeat-x;
   }
@@ -112,6 +117,7 @@
   .advantages__title {
     font-size: 43px;
     line-height: 50px;
+    margin-bottom: 5px;
   }
 
   .advantages__list {

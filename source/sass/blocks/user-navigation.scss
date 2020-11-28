@@ -33,6 +33,14 @@
     background-image: url("../img/cart-icon.svg");
   }
 
+  &:hover::before {
+    background-image: url("../img/cart-icon-hover.svg");
+  }
+
+  &:active::before {
+    background-image: url("../img/cart-icon-active.svg");
+  }
+
   &:hover {
     color: rgba($basic-black, 0.6);
   }

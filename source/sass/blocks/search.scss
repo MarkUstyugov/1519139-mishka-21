@@ -20,7 +20,7 @@
   padding-right: 30px;
   position: relative;
 
-  &::before {
+  /* &::before {
     content: "";
     position: absolute;
     width: 18px;
@@ -28,7 +28,7 @@
     top: 32px;
     left: 32px;
     background-image: url("../img/search-icon1.svg");
-  }
+  } */
 
   &:hover {
     color: rgba($basic-black, 0.6);
@@ -48,6 +48,14 @@
     top: 32px;
     left: 32px;
     background-image: url("../img/search-icon.svg");
+
+    &:hover::before {
+      background-image: url("../img/search-icon-hover.svg");
+    }
+
+    &:active::before {
+      background-image: url("../img/search-icon-active.svg");
+    }
   }
 
   .search__image {
@@ -62,6 +70,14 @@
     border-left: 1px solid $special-grey;
     border-right: 1px solid $special-grey;
     box-sizing: border-box;
+  }
+
+  .search__link:hover path {
+    fill: $basic-green;
+  }
+
+  .search__link:active path {
+    fill: ($basic-green, 0.3);
   }
 
   .search__text {
