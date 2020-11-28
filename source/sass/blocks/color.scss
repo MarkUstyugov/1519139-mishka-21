@@ -9,11 +9,41 @@
   margin-bottom: 10px;
 }
 
+.color__item {
+  min-height: 38px;
+  margin-bottom: 38px;
+}
+
 .color__label {
+  position: relative;
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
   color: $basic-black;
+  padding-left: 62px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 36px;
+    height: 35px;
+    border: 2px solid $extra-black;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 8px;
+    left: 10px;
+    width: 33px;
+    height: 22px;
+    background: url("../img/tick-icon.svg") no-repeat;
+    background-size: 22px 22px;
+  }
 }
 
 @media (min-width: $tablet) {

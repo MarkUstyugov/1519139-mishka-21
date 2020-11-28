@@ -15,6 +15,10 @@
   color: $extra-black;
   width: 100%;
   box-sizing: border-box;
+  padding: 0;
+  padding-bottom: 12px;
+  border: 0;
+  border-bottom: 2px solid $extra-black;
 
   &::placeholder {
     color: rgba($basic-black, 0.3);
@@ -29,6 +33,7 @@
 
   .email__input {
     width: 501px;
+    background-color: transparent;
   }
 }
 

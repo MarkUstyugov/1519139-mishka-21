@@ -6,13 +6,21 @@
   text-decoration: none;
   display: block;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 25px;
   box-sizing: border-box;
 }
 
 .copyright__link svg {
   vertical-align: middle;
   margin-left: 15px;
+}
+
+.copyright__link:hover path {
+  fill: $another-green;
+}
+
+.copyright__link:active path {
+  fill: rgba($another-green, 0.3);
 }
 
 .copyright__text {
@@ -25,6 +33,7 @@
 @media (min-width: $tablet) {
   .copyright {
     border-top: none;
+    padding-bottom: 22px;
   }
 
   .copyright__link {

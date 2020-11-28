@@ -4,28 +4,36 @@
 
 .page-footer__wrapper {
   min-width: 320px;
-  max-width: 1150px;
   min-height: 160px;
   margin: 0 auto;
   box-sizing: border-box;
+  padding: 0 30px;
 }
 
 .page-footer__logo {
   display: none;
 }
 
+.page-footer__social {
+  margin: 0;
+}
+
 @media (min-width: $tablet) {
   .page-footer__wrapper {
-    padding: 0 50px;
+    max-width: 768px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    max-width: 768px;
+    padding: 0 50px;
   }
 
   .page-footer__logo {
     display: block;
+  }
+
+  .page-footer__social {
+    margin: 0;
   }
 }
 

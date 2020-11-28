@@ -1,8 +1,10 @@
-.order__wrapper {
-  padding: 0 30px 55px 30px;
-  max-width: 320px;
-  margin: 0 auto;
-  box-sizing: border-box;
+@media (max-width: $mobile-width-only) {
+  .order__wrapper {
+    padding: 0 30px 55px 30px;
+    max-width: 320px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
 }
 
 .order__text {
@@ -13,11 +15,6 @@
 }
 
 @media (min-width: $tablet) {
-  .order__wrapper {
-    padding: 0 50px;
-    max-width: 768px;
-  }
-
   .order__text {
     font-size: 17px;
     line-height: 30px;
@@ -25,10 +22,10 @@
 }
 
 @media (min-width: $desktop) {
-  .order__wrapper {
+  /* .order__wrapper {
     padding: 0 111px;
     max-width: 1150px;
-  }
+  } */
 
   .order__text {
     padding: 0 114px;
