@@ -1,10 +1,15 @@
+.phone {
+  /* padding-top: 40px; */
+}
+
 .phone__wrapper {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 35px;
 }
 
 .phone__title {
   padding: 0;
+  margin-bottom: 18px;
 }
 
 .phone__input {
@@ -16,24 +21,51 @@
   font-family: inherit;
   width: 100%;
   padding: 0;
-  padding-bottom: 12px;
+  padding-bottom: 14px;
   border: 0;
   border-bottom: 2px solid $extra-black;
+  background-image: url("../img/phone-icon.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 10px right 10px;
 
   &::placeholder {
     color: rgba($basic-black, 0.3);
   }
+
+  &:hover {
+    border-bottom-color: $extra-green;
+    outline: none;
+  }
+
+  &:focus {
+    border-bottom-color: $extra-green;
+    outline: none;
+  }
 }
 
 @media (min-width: $tablet) {
+  .phone {
+    background-color: $basic-grey;
+    padding-top: 61px;
+  }
+
   .phone__title {
+    margin-top: 0;
     width: 167px;
     float: left;
+  }
+
+  .phone__wrapper {
+    padding-top: 0;
   }
 
   .phone__input {
     width: 501px;
     background-color: transparent;
+    font-size: 19px;
+    line-height: 18px;
+    padding-left: 16px;
+    padding-bottom: 12px;
   }
 }
 

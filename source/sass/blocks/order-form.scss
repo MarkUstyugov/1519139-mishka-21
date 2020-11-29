@@ -7,14 +7,17 @@
   display: flex;
   width: 100%;
   align-items: center;
+  text-transform: uppercase;
 
-  &::after {
-    content: "";
-    height: 1px;
-    background-color: $extra-green;
-    flex-grow: 1;
-    flex-shrink: 0;
-    margin-left: 29px;
+  @media (max-width: $mobile-width-only) {
+    &::after {
+      content: "";
+      height: 1px;
+      background-color: $extra-green;
+      flex-grow: 1;
+      flex-shrink: 0;
+      margin-left: 29px;
+    }
   }
 }
 
@@ -22,7 +25,7 @@
   border: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .order-form__text-required {
@@ -30,8 +33,11 @@
   line-height: 16px;
   font-weight: 400;
   margin: 0;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.order-form__bottom-wrapper {
+  margin-top: 12px;
 }
 
 .order-form__button {
@@ -44,20 +50,13 @@
 }
 
 @media (min-width: $tablet) {
-  .order-form__color,
-  .order-form__phone,
-  .order-form__email {
-    background-color: $basic-grey;
-  }
-
   .order-form__phone {
     margin-bottom: 0;
-    padding-top: 40px;
+    /* padding-top: 40px; */
   }
 
   .order-form__email {
-    margin-bottom: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 18px;
   }
 
   .order-form__wrapper,
@@ -73,18 +72,20 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 48px;
+    padding-bottom: 50px;
   }
 
   .order-form__text-required {
     order: 1;
+    font-size: 17px;
+    line-height: 30px;
+    align-self: center;
+    margin: 0;
   }
 
   .order-form__button {
     width: 230px;
-  }
-
-  .order-form__color {
-    background-color: $basic-grey;
   }
 
   .order-form__title {
@@ -93,7 +94,6 @@
 }
 
 @media (min-width: $desktop) {
-  .order-form__wrapper,
   .order__text-wrapper,
   .order-form__bottom-wrapper {
     max-width: 1150px;
@@ -102,7 +102,19 @@
     box-sizing: border-box;
   }
 
+  .order-form__wrapper {
+    max-width: 1150px;
+    padding: 0 50px 0 111px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
   .order-form__bottom-wrapper {
-    padding: 0 114px;
+    padding: 0 225px;
+    padding-bottom: 50px;
+  }
+
+  .wishes__title {
+    margin-top: 20px;
   }
 }

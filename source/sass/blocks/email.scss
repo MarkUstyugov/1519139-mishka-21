@@ -1,10 +1,11 @@
 .email__wrapper {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 34px;
 }
 
 .email__title {
   padding: 0;
+  margin-bottom: 20px;
 }
 
 .email__input {
@@ -16,16 +17,27 @@
   width: 100%;
   box-sizing: border-box;
   padding: 0;
-  padding-bottom: 12px;
+  padding-bottom: 14px;
   border: 0;
   border-bottom: 2px solid $extra-black;
+  background-image: url("../img/mail-icon.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 10px right 10px;
 
   &::placeholder {
     color: rgba($basic-black, 0.3);
   }
+
+  &:hover {
+    border-bottom-color: $extra-green;
+  }
 }
 
 @media (min-width: $tablet) {
+  .email {
+    background-color: $basic-grey;
+  }
+
   .email__title {
     width: 167px;
     float: left;
@@ -34,6 +46,10 @@
   .email__input {
     width: 501px;
     background-color: transparent;
+    font-size: 19px;
+    line-height: 18px;
+    padding-left: 17px;
+    padding-bottom: 12px;
   }
 }
 

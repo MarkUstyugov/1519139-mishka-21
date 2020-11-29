@@ -12,12 +12,18 @@
   line-height: 24px;
   font-weight: 400;
   color: $extra-black;
+  margin: 0;
+  margin-top: 16px;
+  margin-bottom: 30px;
 }
 
 @media (min-width: $tablet) {
   .order__text {
+    padding-top: 54px;
+    padding-bottom: 69px;
     font-size: 17px;
     line-height: 30px;
+    margin: 0;
   }
 }
 
@@ -28,6 +34,7 @@
   } */
 
   .order__text {
-    padding: 0 114px;
+    padding: 0 175px;
+    padding-top: 115px;
   }
 }
