@@ -12,3 +12,49 @@
   font-weight: 700;
   margin: 0;
 }
+
+@media (min-width: $tablet) {
+  .form-header {
+    min-height: 238px;
+    padding-top: 100px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 24px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url("../img/zigzag.png");
+      z-index: 2;
+    }
+  }
+
+  .form-header__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .form-header {
+    min-height: 255px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 24px;
+      left: 0;
+      right: 0;
+      bottom: -6px;
+      background-image: url("../img/form-title-zigzag-desktop.svg");
+      z-index: 2;
+    }
+  }
+
+  .form-header__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
