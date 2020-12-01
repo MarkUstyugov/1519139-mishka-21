@@ -53,11 +53,7 @@
 
 @media (min-width: $tablet) {
   .color {
-    background-color: $basic-grey;
     min-height: 304px;
-  }
-
-  .color__wrapper {
     padding-top: 64px;
   }
 
@@ -125,9 +121,6 @@
 @media (min-width: $desktop) {
   .color {
     min-height: auto;
-  }
-
-  .color__wrapper {
     padding-bottom: 50px;
   }
 
