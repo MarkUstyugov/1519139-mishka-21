@@ -1,108 +1,8 @@
-/* .production__title {
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: 700;
-  color: $basic-black;
-  margin: 0;
-  padding: 22px 13px 27px 91px;
-  border-top: 1px solid $extra-grey;
-  border-left: 1px solid $extra-grey;
-  border-right: 1px solid $extra-grey;
-  box-sizing: border-box;
-}
-
-.production__text {
-  font-size: 13px;
-  line-height: 24px;
-  font-weight: 400;
-  color: $extra-black;
-  margin: 0;
-  margin-bottom: 40px;
-  box-sizing: border-box;
-}
-
-.production__text-wrapper {
-  padding: 35px 32px 32px 33px;
-  border-bottom: 1px solid $extra-grey;
-  border-left: 1px solid $extra-grey;
-  border-right: 1px solid $extra-grey;
-  box-sizing: border-box;
-}
-
-.production__button {
-  padding: 12px 0;
-  width: 192px;
-}
-
-.production__video-wrapper {
-  position: relative;
-  height: 150px;
-  background-color: rgb(35, 148, 223);
-}
-
-.production__video {
-  width: 100%;
-}
-
-.production__play-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 10px;
-  height: 10px;
-  transform: translate(-50%, 0);
-  z-index: 1;
-}
-
-@media (min-width: $tablet) {
-  .production {
-    display: grid;
-  }
-
-  .production__video-wrapper {
-    order: -1;
-    height: 455px;
-  }
-
-  .production__button {
-    width: 584px;
-  }
-}
-
-@media (min-width: $desktop) {
-  .production {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 455px;
-  }
-
-  .production__title {
-    width: 367px;
-    padding: 96px 57px 27px 79px;
-  }
-
-  .production__text-wrapper {
-    width: 367px;
-    padding: 0 57px 60px 79px;
-    flex-grow: 1;
-  }
-
-  .production__video-wrapper {
-    width: 683px;
-    height: 455px;
-  }
-
-  .production__button {
-    width: 230px;
-  }
-}
- */
-
 .production {
   display: grid;
   box-sizing: border-box;
   border: 1px solid $extra-grey;
+  padding-bottom: 33px;
 }
 
 .production__video-wrapper {
@@ -115,19 +15,100 @@
 
 .production__play-button {
   position: absolute;
+  display: block;
+  background-image: url("../img/play-button.svg");
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+  width: 101px;
+  height: 77px;
+  z-index: 2;
   top: 50%;
   left: 50%;
-  width: 10px;
-  height: 10px;
-  transform: translate(-50%, 0);
-  z-index: 1;
+  transform: translate(-50%, -50%);
+}
+
+.production__title {
+  position: relative;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  padding-left: 90px;
+  padding-top: 6px;
+  padding-bottom: 10px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 22px;
+    background-image: url("../img/camera-icon.svg");
+    background-repeat: no-repeat;
+    top: 17px;
+    left: 34px;
+  }
+}
+
+.production__text {
+  font-size: 13px;
+  line-height: 24px;
+  padding-top: 22px;
+  padding-left: 32px;
+  padding-right: 15px;
+  margin-bottom: 42px;
+}
+
+.production__button {
+  display: block;
+  margin: 0 auto;
+  width: 192px;
+  padding: 12px 0;
 }
 
 @media (min-width: $tablet) {
+  .production {
+    padding-bottom: 46px;
+  }
+
   .production__video-wrapper {
     height: 455px;
     background-image: url("../img/production-bg.jpg");
     order: -1;
+  }
+
+  .production__title {
+    font-size: 20px;
+    line-height: 24px;
+    padding-top: 24px;
+    padding-left: 107px;
+    margin-bottom: 10px;
+
+    &::before {
+      top: 21px;
+      left: 40px;
+    }
+  }
+
+  .production__text-wrapper {
+    padding: 0 42px;
+    box-sizing: border-box;
+  }
+
+  .production__text {
+    font-size: 15px;
+    line-height: 30px;
+    padding: 0;
+    padding-top: 5px;
+    padding-bottom: 40px;
+    margin: 0;
+    margin-left: -3px;
+  }
+
+  .production__button {
+    font-size: 17px;
+    line-height: 16px;
+    padding: 15px 0;
+    width: 100%;
   }
 }
 
@@ -138,6 +119,8 @@
     grid-template-rows: min-content 1fr;
     box-sizing: border-box;
     border: 1px solid $extra-grey;
+    min-height: 455px;
+    padding-bottom: 0;
   }
 
   .production__video-wrapper {
@@ -151,10 +134,30 @@
   .production__title {
     grid-column: 2 / -1;
     grid-row: 1 / 2;
+    padding-left: 79px;
+    padding-right: 57px;
+    padding-top: 80px;
+    font-size: 20px;
+    line-height: 24px;
+
+    &::before {
+      top: 30px;
+      left: 77px;
+    }
   }
 
   .production__text-wrapper {
     grid-column: 2 / -1;
     grid-row: 2 / -1;
+    padding-left: 79px;
+    padding-right: 57px;
+  }
+
+  .production__text {
+    margin-bottom: 12px;
+  }
+
+  .production__button {
+    padding: 16px 0;
   }
 }
