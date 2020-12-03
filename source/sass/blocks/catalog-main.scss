@@ -1,7 +1,7 @@
 .catalog-main__catalog-wrapper {
-  padding: 0 30px;
+  padding-left: 30px;
+  padding-right: 30px;
   margin: 0 auto;
-  margin-top: 20px;
   box-sizing: border-box;
   max-width: 320px;
 }
@@ -13,6 +13,7 @@
   padding: 74px 41px 20px 41px;
   box-sizing: border-box;
   background-clip: border-box;
+  position: relative;
 }
 
 .catalog-main__title {
@@ -24,14 +25,61 @@
 }
 
 @media (min-width: $tablet) {
+  .catalog-main__header {
+    padding-top: 80px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 24px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url("../img/zigzag.png");
+      z-index: 2;
+    }
+  }
+
   .catalog-main__catalog-wrapper {
     max-width: 768px;
     padding: 0 50px;
+    padding-top: 67px;
+    padding-bottom: 6px;
+  }
+
+  .catalog-main__title {
+    font-size: 43px;
+    line-height: 50px;
+    padding: 0 20px;
+    padding-top: 20px;
+    padding-bottom: 67px;
   }
 }
 
 @media (min-width: $desktop) {
   .catalog-main__catalog-wrapper {
     max-width: 1150px;
+    padding-top: 128px;
+    padding-bottom: 46px;
+  }
+
+  .catalog-main__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .catalog-main__header {
+    padding-bottom: 30px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 24px;
+      left: 0;
+      right: 0;
+      bottom: -6px;
+      background-image: url("../img/form-title-zigzag-desktop.svg");
+      z-index: 2;
+    }
   }
 }
