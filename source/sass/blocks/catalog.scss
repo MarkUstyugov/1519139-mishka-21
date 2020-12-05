@@ -123,6 +123,11 @@
     font-size: 17px;
     line-height: 24px;
   }
+
+  .catalog__image {
+    width: 334px;
+    height: auto;
+  }
 }
 
 @media (min-width: $desktop) {
@@ -169,5 +174,10 @@
   .catalog__price-wrapper {
     padding-top: 24px;
     box-sizing: border-box;
+  }
+
+  .catalog__image {
+    width: 316px;
+    height: auto;
   }
 }
