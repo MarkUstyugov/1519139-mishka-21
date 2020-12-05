@@ -68,26 +68,37 @@
       <ul class="catalog__list">
         <li class="catalog__item">
           <a class="catalog__image-link" href="#">
-            <img class="catalog__image" src="https://via.placeholder.com/260x195" alt="" width="260" height="195">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/rabbit-desktop.jpg 1x, img/rabbit-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/rabbit-tablet.jpg 1x, img/rabbit-tablet@2x.jpg 2x">
+              <img class="catalog__image" src="img/rabbit-mobile.jpg" srcset="img/rabbit-mobile@2x.jpg 2x" alt=""
+                width="260" height="195">
+            </picture>
           </a>
           <div class="catalog__item-wrapper">
             <h2 class="catalog__title"><a class="catalog__link" href="#">Зайчик-попрыгайчик</a></h2>
-              <p class="catalog__specification">Рост 30 см, вес 200 г</p>
-              <div class="catalog__price-wrapper">
-                <p class="catalog__price">1 200 руб.</p>
-                <a class="catalog__add-cart" href="#">
-                  <!-- SVG icon -->
-                </a>
-              </div>
+            <p class="catalog__specification">Рост 30 см, вес 200 г</p>
+            <div class="catalog__price-wrapper">
+              <p class="catalog__price">1 200 руб.</p>
+              <a class="catalog__add-cart" href="#">
+                <!-- SVG icon -->
+              </a>
+            </div>
           </div>
         </li>
         <li class="catalog__item">
           <a class="catalog__image-link" href="#">
-            <img class="catalog__image" src="https://via.placeholder.com/260x195" alt="" width="260" height="195">
+            <picture>
+              <source media="(min-width: 1150px)"
+                srcset="img/laundry-basket-desktop.jpg 1x, img/laundry-basket-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/laundry-basket-tablet.jpg 1x, img/laundry-basket-tablet@2x.jpg 2x">
+              <img class="catalog__image" src="img/laundry-basket-mobile.jpg"
+                srcset="img/laundry-basket-mobile@2x.jpg 2x" alt="" width="260" height="195">
+            </picture>
           </a>
           <div class="catalog__item-wrapper">
             <h2 class="catalog__title"><a class="catalog__link" href="#">Корзинка для белья</a></h2>
-
             <p class="catalog__specification">Диаметр 15 см, высота 10 см</p>
             <div class="catalog__price-wrapper">
               <p class="catalog__price">690 руб.</p>
@@ -99,7 +110,13 @@
         </li>
         <li class="catalog__item">
           <a class="catalog__image-link" href="#">
-            <img class="catalog__image" src="https://via.placeholder.com/260x195" alt="" width="260" height="195">
+            <picture>
+              <source media="(min-width: 1150px)"
+                srcset="img/basket-toys-desktop.jpg 1x, img/basket-toys-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/basket-toys-tablet.jpg 1x, img/basket-toys-tablet@2x.jpg 2x">
+              <img class="catalog__image" src="img/basket-toys-mobile.jpg" srcset="img/basket-toys-mobile@2x.jpg 2x" alt="" width="260" height="195">
+            </picture>
           </a>
           <div class="catalog__item-wrapper">
             <h2 class="catalog__title"><a class="catalog__link" href="#">Большая корзинка для игрушек</a></h2>
@@ -175,6 +192,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>
