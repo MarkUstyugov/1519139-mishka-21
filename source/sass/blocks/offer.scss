@@ -1,5 +1,6 @@
 .offer {
   background-color: $bg-grey;
+  border-top: 1px solid $extra-grey;
 }
 
 .offer__wrapper {
@@ -14,6 +15,11 @@
   margin: 0 auto;
   box-sizing: border-box;
   max-width: 320px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/offer-bg-mobile@2x.jpg");
+    background-size: 575px auto;
+  }
 }
 
 .offer__title {
@@ -105,6 +111,11 @@
     max-width: 768px;
     padding: 0 50px;
     position: relative;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/offer-bg@2x.jpg");
+      background-size: 1150px auto;
+    }
 
     &::after {
       content: "";

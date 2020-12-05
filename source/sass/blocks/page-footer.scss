@@ -35,6 +35,15 @@
   .page-footer__social {
     margin: 0;
   }
+
+  .page-footer__logo-image {
+    width: 102px;
+    height: 34px;
+  }
+
+  .page-footer__logo-wrapper {
+    padding-bottom: 20px;
+  }
 }
 
 @media (min-width: $desktop) {
