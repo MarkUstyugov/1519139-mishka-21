@@ -13,11 +13,16 @@
     <div class="page-header__wrapper">
       <div class="page-header__logo-wrapper">
         <a class="page-header__logo">
-          <img class="page-header__logo-image" src="img/mishka-logo-mobile.svg" alt="Логотип" width="86" height="35">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/header-logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/header-logo-tablet.svg">
+            <img class="page-header__logo-image" src="img/header-logo-mobile.svg" alt="Логотип" width="86" height="35">
+          </picture>
         </a>
-        <button class="page-header__menu-toggle" type="button"><span class="visually-hidden">Открыть
-            меню</span></button>
       </div>
+      <button class="page-header__menu-toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
       <nav class="page-header__main-navigation main-navigation">
         <ul class="main-navigation__site-navigation site-navigation">
           <li class="site-navigation__item">
@@ -93,8 +98,15 @@
             <dd class="specification-info__text">15 см</dd>
           </div>
         </dl>
-        <img class="special-product__image" src="https://via.placeholder.com/260x315" alt="Изображение товара"
-          width="260" height="315">
+        <div class="special-product__image-wrapper">
+          <picture>
+            <source media="(min-width: 1150px)"
+              srcset="img/triple-set-desktop.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+            <img class="special-product__image" src="img/triple-set-mobile.jpg" srcset="img/triple-set-mobile@2x.jpg 2x"
+              alt="Три корзинки ручной работы разных размеров" width="260" height="315">
+          </picture>
+        </div>
         <div class="special-product__price-wrapper">
           <p class="special-product__price">Цена: 990 руб.</p>
           <a class="special-product__button button" href="#">Заказать</a>
@@ -180,10 +192,11 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <a class="page-footer__logo">
-        <img class="page-footer__logo-image" src="https://via.placeholder.com/102x34" alt="Логотип" width="102"
-          height="40">
-      </a>
+      <div class="page-footer__logo-wrapper">
+        <a class="page-footer__logo">
+          <img class="page-footer__logo-image" src="img/footer-logo.svg" alt="Логотип" width="102" height="40">
+        </a>
+      </div>
       <ul class="page-footer__social social">
         <li class="social__item">
           <a class="social__link" href="#">
@@ -224,6 +237,7 @@
       </div>
     </div>
   </footer>
+
   <section class="modal-cart modal">
     <h2 class="modal-cart__title">Добавить в корзину</h2>
     <p class="modal-cart__text">Выберите размер:</p>
@@ -247,6 +261,8 @@
       <button class="modal-cart__button" type="submit">Добавить</button>
     </form>
   </section>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>

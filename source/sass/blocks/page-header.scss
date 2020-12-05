@@ -16,6 +16,28 @@
   cursor: pointer;
   border: none;
 
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 38px;
+    right: 28px;
+    width: 27px;
+    height: 2px;
+    background-color: black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.page-header__menu-toggle--closed {
   &::before {
     content: "";
     position: absolute;
@@ -25,6 +47,11 @@
     height: 2px;
     background-color: #000000;
     box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
+    transform: none;
+  }
+
+  &::after {
+    display: none;
   }
 }
 
@@ -33,7 +60,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 1px 0 $extra-grey, inset 0 1px 0 $extra-grey;
+  /* box-shadow: 0 1px 0 $extra-grey, inset 0 1px 0 $extra-grey; */
+}
+
+.page-header__logo-image {
+  width: 86px;
+  height: 35px;
 }
 
 .page-header__free-shipping {
@@ -45,34 +77,6 @@
 }
 
 @media (min-width: $tablet) {
-  /* .page-header__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 50px;
-    margin: 0 auto;
-    max-width: 767px;
-  }
-
-  .page-header__logo-wrapper {
-    width: 318px;
-    order: 1;
-    justify-content: flex-start;
-  }
-
-  .page-header__search {
-    order: 2;
-  }
-
-  .page-header__main-navigation {
-    order: 4;
-  }
-
-  .page-header__free-shipping {
-    display: block;
-    order: 5;
-    margin-left: auto;
-  } */
-
   .page-header__menu-toggle {
     display: none;
   }
@@ -91,8 +95,15 @@
     grid-row: 1 / 2;
     grid-column: 1 / 2;
     justify-self: start;
-    /* height: 100%; */
     box-shadow: none;
+    align-self: center;
+    padding-top: 5px;
+    margin-left: -2px;
+  }
+
+  .page-header__logo-image {
+    width: 113px;
+    height: 46px;
   }
 
   .page-header__main-navigation {
@@ -125,24 +136,6 @@
 }
 
 @media (min-width: $desktop) {
-  /* .page-header__wrapper {
-    margin: 0 auto;
-    max-width: 1150px;
-  }
-
-  .page-header__main-navigation {
-    order: 1;
-  }
-
-  .page-header__logo-wrapper {
-    order: 2;
-  }
-
-  .page-header__additional-navigation {
-    order: 4;
-    display: block;
-  } */
-
   .page-header__wrapper {
     padding: 0 50px;
     max-width: 1150px;
@@ -156,7 +149,12 @@
     grid-row: 1 / 2;
     grid-column: 2 / 3;
     justify-self: start;
-    /* height: 100%; */
+  }
+
+  .page-header__logo-image {
+    width: 149px;
+    height: 72px;
+    margin-left: 0;
   }
 
   .main-navigation {
@@ -164,7 +162,6 @@
     grid-column: 1 / 2;
     position: static;
     align-self: center;
-    /* height: 100%; */
   }
 
   .page-header__search {

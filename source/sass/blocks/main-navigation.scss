@@ -2,6 +2,10 @@
   position: relative;
 }
 
+.main-navigation--closed {
+  display: none;
+}
+
 @media (min-width: $tablet) {
   .main-navigation {
     display: flex;
@@ -12,17 +16,4 @@
   .main-navigation__toggle {
     display: none;
   }
-
-  /* .main-navigation__toggle {
-    display: none;
-  }
-
-  .user-navigation {
-    order: 2;
-    width: 264px;
-  }
-
-  .main-navigation__site-navigation {
-    order: 3;
-  } */
 }
