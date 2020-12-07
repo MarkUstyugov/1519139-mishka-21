@@ -14,6 +14,15 @@
   display: none;
 }
 
+.page-footer__logo[href]:hover .page-footer__logo-image {
+  fill: $another-green;
+}
+
+.page-footer__logo[href]:active .page-footer__logo-image {
+  fill: $another-green;
+  opacity: 0.3;
+}
+
 .page-footer__social {
   margin: 0;
 }
@@ -36,10 +45,10 @@
     margin: 0;
   }
 
-  .page-footer__logo-image {
+  /* .page-footer__logo-image {
     width: 102px;
     height: 34px;
-  }
+  } */
 
   .page-footer__logo-wrapper {
     padding-bottom: 20px;

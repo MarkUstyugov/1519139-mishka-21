@@ -9,4 +9,4 @@ menuButton.addEventListener('click', function(evt) {
   search.classList.toggle('search--closed');
   userNavigation.classList.toggle('user-navigation--closed');
   menuButton.classList.toggle('page-header__menu-toggle--closed');
-})
+});

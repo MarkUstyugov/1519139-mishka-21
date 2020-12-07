@@ -94,6 +94,11 @@
   margin: 0 auto;
 }
 
+.contacts__interactive-map {
+  width: 100%;
+  height: 100%;
+}
+
 @media (min-width: $tablet) {
   .contacts {
     padding-top: 86px;
@@ -174,11 +179,6 @@
   }
 
   .contacts__main-wrapper {
-    /* display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 457px;
-    justify-content: flex-start; */
     padding: 0;
     margin: 0;
     grid-row: 1 / 2;
@@ -209,11 +209,6 @@
       top: 62px;
       left: -112px;
     }
-  }
-
-  .contacts__wrapper {
-    /* order: 1;
-    width: 350px; */
   }
 
   .contacts__map-wrapper {
