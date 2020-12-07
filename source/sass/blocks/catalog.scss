@@ -52,6 +52,14 @@
   color: $basic-black;
   margin: 0;
   margin-bottom: 5px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .catalog__specification {
@@ -73,6 +81,29 @@
 
 .catalog__production {
   margin-bottom: 58px;
+}
+
+.catalog__item:hover .catalog__item-wrapper {
+  box-shadow: 0 6px 10 rgba(0, 0, 0, 0.1);
+}
+
+.catalog__item:active .catalog__item-wrapper {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.catalog__add-cart {
+  fill: $basic-black;
+  opacity: 0.2;
+}
+
+.catalog__add-cart:hover {
+  fill: $basic-green;
+  opacity: 1;
+}
+
+.catalog__add-cart:active {
+  fill: $basic-green;
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet) {

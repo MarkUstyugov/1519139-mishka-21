@@ -30,6 +30,19 @@
   color: $basic-black;
 }
 
+.copyright-icon {
+  fill: $basic-green;
+}
+
+.copyright__link:hover .copyright-icon {
+  fill: $another-green;
+}
+
+.copyright__link:active .copyright-icon {
+  fill: $another-green;
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet) {
   .copyright {
     border-top: none;

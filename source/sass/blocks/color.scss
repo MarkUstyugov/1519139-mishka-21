@@ -38,6 +38,14 @@
     border: 2px solid $extra-black;
   }
 
+  &:hover::before {
+    border: 2px solid $extra-green;
+  }
+
+  &:active::before {
+    border: 2px solid rgba($basic-black, 0.3);
+  }
+
   .color__input:checked + &::after {
     content: "";
     position: absolute;

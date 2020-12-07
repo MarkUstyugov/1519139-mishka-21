@@ -18,12 +18,25 @@
   margin-right: 0;
 }
 
-.social__link:hover path {
+/* .social__link:hover path {
   fill: $another-green;
 }
 
 .social__link:active path {
   fill: rgba($another-green, 0.3);
+} */
+
+.social__icon {
+  fill: $basic-black;
+}
+
+.social__link:hover .social__icon {
+  fill: $another-green;
+}
+
+.social__link:active .social__icon {
+  fill: $another-green;
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet) {

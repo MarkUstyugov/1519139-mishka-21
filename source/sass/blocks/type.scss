@@ -39,6 +39,14 @@
     border-radius: 50%;
   }
 
+  &:hover::before {
+    border: 2px solid $extra-green;
+  }
+
+  &:active::before {
+    border: 2px solid rgba($basic-black, 0.3);
+  }
+
   .type__input:checked + &::after {
     position: absolute;
     content: "";
