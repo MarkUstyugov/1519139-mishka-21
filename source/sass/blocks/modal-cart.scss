@@ -77,17 +77,19 @@
   width: 82px;
   height: 52px;
   box-sizing: border-box;
+  border: 2px solid rgba($extra-black, 0.1);
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 82px;
-    height: 52px;
-    top: 0;
-    left: 0;
-    border: 2px solid $extra-grey;
-    box-sizing: border-box;
+  &:hover {
+    border: 2px solid rgba($extra-black, 0.3);
   }
+
+  &:active {
+    border: 2px solid $extra-green;
+  }
+}
+
+.modal-cart__radio:checked + .modal-cart__label {
+  border: 2px solid $basic-green;
 }
 
 @media (min-width: $tablet) {
@@ -114,10 +116,6 @@
 
   .modal-cart__label {
     width: 112px;
-
-    &::before {
-      width: 112px;
-    }
   }
 
   .modal-cart__button {

@@ -1,4 +1,4 @@
-let staticMap = document.querySelector('.contacts__map-image');
+var staticMap = document.querySelector('.contacts__map-image');
 staticMap.classList.add('contacts__map-image--hide');
 
 ymaps.ready(function () {
