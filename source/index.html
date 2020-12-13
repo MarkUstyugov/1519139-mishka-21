@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <title>HTML Academy: Мишка</title>
 </head>
 
@@ -189,9 +189,12 @@
         </div>
       </div>
       <div class="contacts__map-wrapper" id="map">
-        <!-- <iframe class="contacts__interactive-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3039288150726!2d30.32216254348057!3d59.9386489448136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca18e1d7%3A0xe1b646f62fb95e7a!2sMISHKA!5e0!3m2!1sru!2sru!4v1607270440967!5m2!1sru!2sru" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
-        <!-- <img class="contacts__map-image" src=""
-          alt="Наш адрес: г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101" width="320" height="454"> -->
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/map-desktop.png">
+          <source media="(min-width: 768px)" srcset="img/map-tablet.png">
+          <img class="contacts__map-image" src="img/map-mobile.png"
+            alt="Наш адрес: г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101" width="320" height="454">
+        </picture>
       </div>
       <div class="contacts__button-wrapper">
         <a class="contacts__button button" href="#">Напишите нам</a>
@@ -250,18 +253,18 @@
     <form class="modal-cart__form" action="https://echo.htmlacademy.ru" method="GET">
       <ul class="modal-cart__size-list">
         <li class="modal-cart__item">
-          <label class="modal-cart__label" for="size-small">S</label>
           <input class="visually-hidden modal-cart__radio" type="radio" id="size-small" value="small" name="cart-size"
             checked>
+          <label class="modal-cart__label" for="size-small">S</label>
         </li>
         <li class="modal-cart__item">
-          <label class="modal-cart__label" for="size-medium">M</label>
           <input class="visually-hidden modal-cart__radio" type="radio" id="size-medium" value="medium"
             name="cart-size">
+          <label class="modal-cart__label" for="size-medium">M</label>
         </li>
         <li class="modal-cart__item">
-          <label class="modal-cart__label" for="size-large">L</label>
           <input class="visually-hidden modal-cart__radio" type="radio" id="size-large" value="large" name="cart-size">
+          <label class="modal-cart__label" for="size-large">L</label>
         </li>
       </ul>
       <button class="modal-cart__button" type="submit">Добавить</button>
@@ -270,12 +273,11 @@
 
   <div class="white-mask"></div>
 
-  <script defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlTpl92Ko-hZwtQ0QSueGX9TSSIGjqyqs&callback=initMap">
-    </script>
-  <script src="js/order-main.js"></script>
-  <script src="js/map.js"></script>
-  <script src="js/menu.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=22332378-c47c-4037-b676-507c6e3d5691&lang=ru_RU">
+  </script>
+  <script src="js/order-main.min.js"></script>
+  <script src="js/map.min.js"></script>
+  <script src="js/menu.min.js"></script>
 </body>
 
 </html>

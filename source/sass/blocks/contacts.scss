@@ -65,6 +65,7 @@
   color: $extra-black;
   text-decoration: none;
   border-bottom: 1px solid $extra-green;
+  padding-bottom: 5px;
 
   &:hover {
     color: $another-green;
@@ -87,7 +88,7 @@
 }
 
 .contacts__map-wrapper {
-  background-color: lemonchiffon;
+  background-color: $basic-green;
   width: 100%;
   height: 454px;
   max-width: 320px;
@@ -97,6 +98,15 @@
 .contacts__interactive-map {
   width: 100%;
   height: 100%;
+}
+
+.contacts__map-image {
+  width: 320px;
+  height: 454px;
+}
+
+.contacts__map-image--hide {
+  display: none;
 }
 
 @media (min-width: $tablet) {
@@ -163,6 +173,11 @@
 
   .contacts__map-wrapper {
     max-width: 768px;
+  }
+
+  .contacts__map-image {
+    width: 768px;
+    height: 457px;
   }
 }
 
@@ -241,5 +256,10 @@
 
   .contacts__button {
     padding: 14px 0;
+  }
+
+  .contacts__map-image {
+    width: 527px;
+    height: 457px;
   }
 }

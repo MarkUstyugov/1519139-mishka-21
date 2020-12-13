@@ -1,7 +1,7 @@
-let menuButton = document.querySelector('.page-header__menu-toggle');
-let mainNavigation = document.querySelector('.main-navigation');
-let search = document.querySelector('.search');
-let userNavigation = document.querySelector('.user-navigation');
+var menuButton = document.querySelector('.page-header__menu-toggle');
+var mainNavigation = document.querySelector('.main-navigation');
+var search = document.querySelector('.search');
+var userNavigation = document.querySelector('.user-navigation');
 
 menuButton.addEventListener('click', function(evt) {
   evt.preventDefault();

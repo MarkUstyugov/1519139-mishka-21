@@ -1,6 +1,6 @@
-let whiteMask = document.querySelector('.white-mask');
-let modalCart = document.querySelector('.modal-cart');
-let cartButton = document.querySelectorAll('.catalog__add-cart');
+var whiteMask = document.querySelector('.white-mask');
+var modalCart = document.querySelector('.modal-cart');
+var cartButton = document.querySelectorAll('.catalog__add-cart');
 
 for (var i = 0; i < cartButton.length; i++) {
   cartButton[i].addEventListener("click", function (evt) {
@@ -9,6 +9,16 @@ for (var i = 0; i < cartButton.length; i++) {
     modalCart.classList.add('modal-cart--active');
   });
 }
+
+document.addEventListener("click", function (evt) {
+  var target = evt.target;
+  if(!target.closest(".catalog__add-cart")) {
+    if (!target.closest(".modal-cart")) {
+      modalCart.classList.remove("modal-cart--active");
+      whiteMask.classList.remove("white-mask--active");
+    }
+  }
+});
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
