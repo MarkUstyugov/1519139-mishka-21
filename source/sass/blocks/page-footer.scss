@@ -29,12 +29,16 @@
 
 @media (min-width: $tablet) {
   .page-footer__wrapper {
-    max-width: 768px;
+    /* max-width: 768px; */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 0 50px;
+    padding: 18px 50px 0;
+    box-sizing: border-box;
+
+    min-width: 768px;
+    min-height: 143px;
   }
 
   .page-footer__logo {

@@ -14,7 +14,7 @@
   justify-content: space-between;
   margin: 0 auto;
   box-sizing: border-box;
-  max-width: 320px;
+  min-width: 320px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/offer-bg-mobile@2x.jpg");
@@ -108,9 +108,11 @@
     min-height: 746px;
     background-image: url("../img/offer-bg.jpg");
     background-position: top;
-    max-width: 768px;
+    /* max-width: 768px; */
     padding: 0 50px;
     position: relative;
+
+    min-width: 768px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/offer-bg@2x.jpg");
@@ -136,7 +138,9 @@
   }
 
   .offer__item {
-    width: 334px;
+    /* width: 334px; */
+
+    min-width: 50%;
   }
 
   .offer__title {

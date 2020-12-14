@@ -1,16 +1,10 @@
 .site-navigation {
-  /* display: flex;
-  flex-wrap: wrap;
-  flex-direction: column; */
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .site-navigation__item {
-  /* display: flex;
-  align-items: center; */
-  /* min-height: 79px; */
   box-shadow: 0 1px 0 $extra-grey, inset 0 1px 0 $extra-grey;
 }
 
@@ -21,10 +15,11 @@
   font-weight: 700;
   color: $basic-black;
   text-decoration: none;
-  padding-top: 27px;
-  padding-bottom: 27px;
+  padding-top: 28px;
+  padding-bottom: 28px;
   padding-left: 76px;
   padding-right: 30px;
+  justify-content: center;
 
   &:hover {
     color: rgba($basic-black, 0.6);
