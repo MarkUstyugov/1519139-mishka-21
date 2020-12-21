@@ -2,7 +2,7 @@
   margin: 0;
   margin-bottom: 34px;
   position: relative;
-  float: left;
+  /* float: left; */
 }
 
 .email__title {
@@ -60,21 +60,33 @@
 @media (min-width: $tablet) {
   .email {
     padding-bottom: 18px;
+    display: flex;
+    align-items: flex-start;
   }
 
   .email__title {
-    width: 167px;
+    max-width: 167px;
     float: left;
+    margin-top: 7px;
+  }
+
+  .email__wrapper {
+    width: 100%;
   }
 
   .email__input {
-    width: 501px;
+    width: 100%;
     background-color: transparent;
     font-size: 19px;
     line-height: 18px;
     padding-left: 17px;
     padding-bottom: 12px;
     background-position: bottom 13px right 20px;
+  }
+
+  .mail-icon {
+    right: 23px;
+    top: 6px;
   }
 }
 
@@ -90,5 +102,14 @@
   .email__input {
     width: 700px;
     background-position: bottom 14px right 5px;
+  }
+
+  .email__wrapper {
+    max-width: 700px;
+  }
+
+  .mail-icon {
+    right: 5px;
+    top: 6px;
   }
 }

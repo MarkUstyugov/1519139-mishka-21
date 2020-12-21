@@ -13,9 +13,9 @@
   right: 0;
   width: 82px;
   height: 78px;
-  display: block;
   cursor: pointer;
   border: none;
+  display: none;
 
   &::before,
   &::after {
@@ -54,6 +54,10 @@
   &::after {
     display: none;
   }
+}
+
+.page-header__menu-toggle--show {
+  display: block;
 }
 
 .page-header__logo-wrapper {

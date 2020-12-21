@@ -19,7 +19,10 @@
   height: 150px;
   background-image: url("../img/video-bg-mobile.jpg");
   background-repeat: no-repeat;
-  background-size: 260px 150px;
+  /* background-size: 260px 150px; */
+  background-size: cover;
+  padding-top: 56.25%;
+  box-sizing: border-box;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/video-bg-mobile@2x.jpg");
@@ -57,7 +60,7 @@
   font-weight: 700;
   padding-left: 90px;
   padding-top: 6px;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
 
   &::before {
     content: "";
@@ -95,7 +98,7 @@
   .production__video-wrapper {
     height: 455px;
     background-image: url("../img/video-bg-tablet.jpg");
-    background-size: 668px 455px;
+    /* background-size: 668px 455px; */
     order: -1;
 
     @media (min-resolution: 2dppx) {
@@ -108,7 +111,7 @@
     line-height: 24px;
     padding-top: 24px;
     padding-left: 107px;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
 
     &::before {
       top: 21px;
@@ -134,7 +137,7 @@
   .production__button {
     font-size: 17px;
     line-height: 16px;
-    padding: 15px 0;
+    padding: 16px 0;
     width: 100%;
   }
 }

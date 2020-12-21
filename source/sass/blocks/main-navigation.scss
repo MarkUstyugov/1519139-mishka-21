@@ -1,8 +1,9 @@
 .main-navigation {
   position: relative;
+  display: block;
 }
 
-.main-navigation--closed {
+.main-navigation--active {
   display: none;
 }
 

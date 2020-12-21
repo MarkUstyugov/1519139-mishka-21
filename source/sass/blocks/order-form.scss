@@ -45,7 +45,7 @@
   font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
-  width: 260px;
+  width: 100%;
 }
 
 .order-form__wrapper {
@@ -62,7 +62,7 @@
   .order-form__wrapper,
   .order__text-wrapper,
   .order-form__bottom-wrapper {
-    max-width: 768px;
+    min-width: 768px;
     padding: 0 50px;
     margin: 0 auto;
     box-sizing: border-box;

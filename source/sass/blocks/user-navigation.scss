@@ -10,29 +10,11 @@
   color: $basic-black;
   text-decoration: none;
   padding-top: 29px;
-  padding-bottom: 28px;
+  padding-bottom: 25px;
   padding-left: 76px;
   padding-right: 30px;
   position: relative;
   box-shadow: 0 1px 0 $extra-grey, inset 0 1px 0 $extra-grey;
-
-  /* &::before {
-    content: "";
-    position: absolute;
-    width: 21px;
-    height: 18px;
-    top: 32px;
-    left: 32px;
-    background-image: url("../img/cart-icon.svg");
-  }
-
-  &:hover::before {
-    background-image: url("../img/cart-icon-hover.svg");
-  }
-
-  &:active::before {
-    background-image: url("../img/cart-icon-active.svg");
-  } */
 
   &:hover {
     color: rgba($basic-black, 0.6);
@@ -61,7 +43,7 @@
   opacity: 0.3;
 }
 
-.user-navigation--closed {
+.user-navigation--active {
   display: none;
 }
 

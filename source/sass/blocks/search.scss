@@ -1,3 +1,7 @@
+.search {
+  display: block;
+}
+
 .search__link {
   display: block;
   font-size: 17px;
@@ -20,7 +24,7 @@
   }
 }
 
-.search--closed {
+.search--active {
   display: none;
 }
 

@@ -3,7 +3,9 @@
   padding-right: 30px;
   margin: 0 auto;
   box-sizing: border-box;
-  max-width: 320px;
+  /* max-width: 320px; */
+
+  min-width: 320px;
 }
 
 .catalog-main__header {
@@ -41,10 +43,12 @@
   }
 
   .catalog-main__catalog-wrapper {
-    max-width: 768px;
+    /* max-width: 768px; */
     padding: 0 50px;
     padding-top: 67px;
     padding-bottom: 6px;
+
+    min-width: 768px;
   }
 
   .catalog-main__title {
