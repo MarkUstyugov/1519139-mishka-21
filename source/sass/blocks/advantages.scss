@@ -17,7 +17,7 @@
   color: $basic-black;
   margin: 0;
   padding-top: 38px;
-  margin-bottom: 2px;
+  margin-bottom: 1px;
 }
 
 .advantages__list {
@@ -27,7 +27,6 @@
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
 }
 
 .advantages__item {
@@ -37,8 +36,11 @@
   color: $basic-black;
   padding-top: 82px;
   position: relative;
-
   width: 270px;
+
+  &--present {
+    padding-top: 84px;
+  }
 
   &--flower::before {
     content: "";
@@ -47,7 +49,7 @@
     position: absolute;
     background-image: url("../img/flower-icon.svg");
     background-repeat: no-repeat;
-    top: 30px;
+    top: 28px;
     left: 8px;
   }
 
@@ -69,8 +71,8 @@
     position: absolute;
     background-image: url("../img/heart-icon.svg");
     background-repeat: no-repeat;
-    top: 30px;
-    left: 8px;
+    top: 33px;
+    left: 7px;
   }
 
   &--wool::before {
@@ -80,8 +82,8 @@
     position: absolute;
     background-image: url("../img/wool-icon.svg");
     background-repeat: no-repeat;
-    top: 30px;
-    left: 8px;
+    top: 32px;
+    left: 3px;
   }
 
   &--rocket::before {
@@ -91,8 +93,8 @@
     position: absolute;
     background-image: url("../img/rocket-icon.svg");
     background-repeat: no-repeat;
-    top: 30px;
-    left: 8px;
+    top: 33px;
+    left: -7px;
   }
 
   &--present::before {
@@ -102,8 +104,8 @@
     position: absolute;
     background-image: url("../img/present-icon.svg");
     background-repeat: no-repeat;
-    top: 30px;
-    left: 8px;
+    top: 33px;
+    left: 4px;
   }
 }
 
@@ -117,8 +119,6 @@
 
   .advantages__wrapper {
     padding: 0 50px;
-    /* max-width: 768px; */
-
     min-width: 768px;
   }
 
@@ -131,15 +131,19 @@
   .advantages__list {
     display: flex;
     flex-wrap: wrap;
-
-    justify-content: space-around;
+    width: 668px;
+    margin: 0 auto;
   }
 
   .advantages__item {
     font-size: 20px;
     line-height: 22px;
-    width: 50%;
+    width: 334px;
     max-width: 454px;
+
+    &--flower::before {
+      top: 34px;
+    }
   }
 
   .advantages__item--flower {
@@ -217,6 +221,7 @@
 
   .advantages__list {
     justify-content: flex-start;
+    width: auto;
   }
 
   .advantages__item {

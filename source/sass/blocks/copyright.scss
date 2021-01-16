@@ -1,10 +1,11 @@
 .copyright {
   border-top: 1px solid $special-grey;
+  text-align: center;
 }
 
 .copyright__link {
   text-decoration: none;
-  display: block;
+  display: inline-block;
   text-align: center;
   padding-top: 25px;
   box-sizing: border-box;
@@ -12,7 +13,7 @@
 
 .copyright__link svg {
   vertical-align: middle;
-  margin-left: 15px;
+  margin-left: 26px;
 }
 
 .copyright__link:hover path {
@@ -51,9 +52,5 @@
 
   .copyright__link {
     padding-top: 0;
-  }
-
-  .copyright__text {
-    padding-right: 10px;
   }
 }

@@ -10,8 +10,13 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   padding-top: 12px;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
   border-bottom: 1px solid $extra-grey;
+}
+
+.specification-info__row:nth-child(n+2) {
+  padding-top: 7px;
+  padding-bottom: 12px;
 }
 
 .specification-info__title {

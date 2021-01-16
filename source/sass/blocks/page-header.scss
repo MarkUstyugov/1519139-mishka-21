@@ -1,9 +1,9 @@
 .page-header__wrapper {
   margin: 0 auto;
-  /* max-width: 320px; */
   min-width: 320px;
   box-sizing: border-box;
   position: relative;
+  border-top: 1px solid $basic-grey;
 }
 
 .page-header__menu-toggle {
@@ -67,6 +67,10 @@
   align-items: center;
 }
 
+.page-header__logo {
+  margin-top: 5px;
+}
+
 .page-header__logo-image {
   width: 86px;
   height: 35px;
@@ -95,13 +99,12 @@
 
   .page-header__wrapper {
     padding: 0 50px;
-    /* max-width: 767px; */
     display: grid;
     grid-template-rows: 89px auto;
     grid-template-columns: minmax(320px, 1fr) 84px 264px;
     position: relative;
     z-index: 3;
-
+    border-top: none;
     min-width: 768;
   }
 

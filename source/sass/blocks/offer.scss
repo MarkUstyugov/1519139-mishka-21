@@ -7,8 +7,8 @@
   background-image: url("../img/offer-bg-mobile.jpg");
   background-color: $bg-grey;
   background-repeat: no-repeat;
-  background-position: center -15px;
-  min-height: 488px;
+  background-position: center -19px;
+  min-height: 486px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -29,7 +29,7 @@
   color: $basic-black;
   margin: 0 auto;
   text-align: center;
-  margin-top: 73px;
+  margin-top: 72px;
   padding: 0 30px;
 }
 
@@ -138,8 +138,6 @@
   }
 
   .offer__item {
-    /* width: 334px; */
-
     min-width: 50%;
   }
 
@@ -152,7 +150,7 @@
     text-align: center;
     margin-top: 155px;
     padding: 0 30px;
-    width: auto;
+    box-sizing: border-box;
   }
 
   .offer__button {

@@ -59,6 +59,14 @@
   }
 }
 
+.color__input:focus + .color__label::before {
+  outline: 5px auto $extra-green;
+}
+
+.color__input:focus {
+  outline: 5px auto $extra-green;
+}
+
 @media (min-width: $tablet) {
   .color {
     min-height: 304px;

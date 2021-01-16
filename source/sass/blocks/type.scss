@@ -58,6 +58,14 @@
     border-radius: 50%;
     background-color: $extra-green;
   }
+
+  .type__input:focus + &::before {
+    outline: 5px auto $extra-green;
+  }
+}
+
+.type__input:focus {
+  outline: 5px auto $extra-green;
 }
 
 @media (min-width: $tablet) {

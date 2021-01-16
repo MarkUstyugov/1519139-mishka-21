@@ -24,3 +24,11 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+a:focus {
+  outline-color: $extra-green;
+}
+
+button:focus {
+  outline-color: $extra-green;
+}
