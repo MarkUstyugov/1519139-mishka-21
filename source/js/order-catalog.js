@@ -1,12 +1,12 @@
-var whiteMask = document.querySelector('.white-mask');
-var modalCart = document.querySelector('.modal-cart');
-var cartButton = document.querySelectorAll('.catalog__add-cart');
+var whiteMask = document.querySelector(".white-mask");
+var modalCart = document.querySelector(".modal-cart");
+var cartButton = document.querySelectorAll(".catalog__add-cart");
 
 for (var i = 0; i < cartButton.length; i++) {
   cartButton[i].addEventListener("click", function (evt) {
     evt.preventDefault();
-    whiteMask.classList.add('white-mask--active');
-    modalCart.classList.add('modal-cart--active');
+    whiteMask.classList.add("white-mask--active");
+    modalCart.classList.add("modal-cart--active");
   });
 }
 

@@ -60,7 +60,6 @@
   }
 
   .order-form__wrapper,
-  .order__text-wrapper,
   .order-form__bottom-wrapper {
     min-width: 768px;
     padding: 0 50px;
@@ -94,13 +93,12 @@
 }
 
 @media (min-width: $desktop) {
-  .order__text-wrapper,
-  .order-form__bottom-wrapper {
+  /* .order-form__bottom-wrapper {
     max-width: 1150px;
     padding: 0 50px;
     margin: 0 auto;
     box-sizing: border-box;
-  }
+  } */
 
   .order-form__wrapper {
     max-width: 1150px;
@@ -112,9 +110,8 @@
   .order-form__bottom-wrapper {
     padding: 0 225px;
     padding-bottom: 50px;
-  }
-
-  .wishes__title {
-    margin-top: 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 1150px;
   }
 }

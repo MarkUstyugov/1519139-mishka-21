@@ -28,6 +28,16 @@
   margin-bottom: 35px;
 }
 
+.review__text br {
+  display: none;
+}
+
+@media (max-width: 320px) {
+  .review__text br {
+    display: block;
+  }
+}
+
 .review__author-wrapper {
   margin-bottom: 30px;
 }

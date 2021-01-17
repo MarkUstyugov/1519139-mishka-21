@@ -18,3 +18,12 @@
     display: none;
   }
 }
+
+@media (min-width: $desktop) {
+  .main-navigation {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    position: static;
+    align-self: center;
+  }
+}

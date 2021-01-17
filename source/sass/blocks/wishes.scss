@@ -65,7 +65,8 @@
   }
 
   .wishes__title {
-    width: 114px;
+    max-width: 114px;
+    margin-top: 20px;
   }
 
   .wishes__textarea {

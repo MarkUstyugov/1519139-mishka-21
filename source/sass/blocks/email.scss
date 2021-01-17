@@ -38,18 +38,18 @@
     outline: none;
   }
 
-  &:hover ~ .mail-icon {
+  &:hover ~ .email__mail-icon {
     fill: $extra-green;
     opacity: 1;
   }
 
-  &:focus ~ .mail-icon {
+  &:focus ~ .email__mail-icon {
     fill: $extra-green;
     opacity: 1;
   }
 }
 
-.mail-icon {
+.email__mail-icon {
   position: absolute;
   right: 3px;
   top: 0;
@@ -84,7 +84,7 @@
     background-position: bottom 13px right 20px;
   }
 
-  .mail-icon {
+  .email__mail-icon {
     right: 23px;
     top: 6px;
   }
@@ -108,7 +108,7 @@
     max-width: 700px;
   }
 
-  .mail-icon {
+  .email__mail-icon {
     right: 5px;
     top: 6px;
   }
